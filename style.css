@@ -1,0 +1,353 @@
+/*
+    Hierarchy:
+    1. ID
+    2. CLASS
+    3. * (All)
+    3. ELEMTENTS
+*/
+
+/*
+    STANDARD VALUES
+*/
+*{
+
+    font-family: 'Exo 2', sans-serif;
+    font-size: 3vmin;
+    margin: 0px;
+    padding: 0px;
+	/* FOR CHROME*/
+    user-select: none;
+	/* FOR FIREFOX*/
+	-moz-user-select: none;
+    /* OTHER UNSELECT */
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+
+    text-decoration: none;
+    font-synthesis: style;
+
+    --fixed-element-color: #5499DE;
+}
+
+*:focus {
+    outline: none;
+}
+
+body{
+    background-color: white;
+}
+
+body #slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+    CURRENT SLIDE / TOTAL SLIDES
+*/
+body #slider #pages{
+    position: fixed;
+    color: inherit;
+    top: 10%;
+    padding-left: 175px;
+    transition: 0.5s;
+}
+
+/*
+    EDITING SIDE-NAV
+*/
+body #slider .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1e2931;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 40px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    /*background-image: url("http://www.20cents-video.com/userdata/animated-gif/library/dotsnew.gif");
+    background-blend-mode: darken;*/
+}
+
+/*
+    BUTTONS IN SIDE-NAV
+*/
+body #slider .sidenav button {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    background-color: transparent;
+    border: none;
+    white-space: nowrap;
+}
+
+body #slider .sidenav button:hover {
+    color: #f1f1f1;
+}
+
+body #slider .sidenav a {
+    padding: 0px 0px 0px 0px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    background-color: transparent;
+    border: none;
+    white-space: nowrap;
+}
+
+body #slider .sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/*
+    FOR SMALL SCREENS: SIDE-NAV ADJUST
+*/
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/*
+    SIDE-NAV INPUT FIELD
+*/
+body #slider .sidenav input {
+    padding: 8px 0px 8px 0px;
+    width: 0px;
+    height: 30px;
+    background-color: #344455;
+    font-size: 12px;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    text-indent: 10px;
+}
+body #slider .sidenav input:hover {
+    background-color: #3b4c5f;
+}
+
+/*
+    SLIDE AND CONTENT
+*/
+body #slider .slide{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+
+    /* EDITABLE:
+    "read-only" - not EDITABLE
+    "read-write" - EDITABLE
+
+    -webkit-user-modify: read-only;
+    -moz-user-modify: read-pnly;
+    user-modify: read-only;
+	*/
+}
+
+body #slider .slide .content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+    TEST
+*/
+body #slider #btn_edit :hover {
+    color: red !important;
+}
+
+
+/*
+    TITLE OF THE SLIDE
+*/
+body #slider .slide .content .title{
+    text-align: center;
+    font-size: 4vmin;
+    padding: 20px;
+
+}
+body #slider .slide .content h1{
+    text-align: center;
+    font-size: 4vmin;
+    padding: 20px;
+}
+
+/*
+    LIST OF THE SLIDE
+*/
+body #slider .slide .content .table_of_contents{
+    list-style-position: inside;
+    /*color: #151515;*/
+}
+body #slider .slide .content ul{
+    list-style-position: inside;
+    /*color: #151515;*/
+}
+body #slider .slide .content ol{
+    list-style-position: inside;
+    /*color: #151515;*/
+}
+
+body #slider .slide .content ul li{
+    font-size: 3.6vmin !important;
+    list-style-position: outside;
+}
+body #slider .slide .content ol li{
+    font-size: 3.6vmin !important;
+    list-style-position: outside;
+}
+body #slider .slide .content .no_enumeration{
+    list-style: none;
+}
+
+/*
+    TEXT OF THE SLIDE
+*/
+body #slider .slide .content .text{
+    text-align: center;
+}
+body #slider .slide .content p{
+    text-align: center;
+}
+
+/*
+    BLOCKQUOTES / CITES OF THE SLIDE
+*/
+body #slider .slide .content .cite{
+    margin-left: 0px;
+    padding: 5px 5px 5px 10px;
+    background-color: rgb(245,245,245);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: "Courier New", serif !important;
+    font-style: italic !important;
+    color: rgb(0,45,45);
+    border-top: 1px solid rgb(190,190,190);
+    border-right: 1px solid rgb(190,190,190);
+    text-align: left !important;
+    font-size: 2.2vmin;
+}
+
+/*
+    EXPLANATIONS
+*/
+body #slider .slide .content sup{
+    font-size: 2.2vmin;
+    color: var(--fixed-element-color);
+}
+body #slider .slide .content .note{
+    padding-top: 30px;
+    font-size: 2vmin;
+    font-style: italic;
+    text-align: left;
+}
+
+/*
+    DIFFERENT FONT SIZES
+*/
+body #slider .slide .content .fontTiny {
+    font-size: 1.5vmin !important;
+}
+body #slider .slide .content .fontSmall {
+    font-size: 2.6vmin !important;
+}
+body #slider .slide .content .fontLarge {
+    font-size: 3.8vmin !important;
+}
+
+/*
+    OTHER ATRIBUTES
+*/
+body #slider .slide .content .selectable{
+    user-select: auto !important;
+    -webkit-user-drag: auto !important;
+}
+
+/*
+    IMAGE OF THE SLIDE
+*/
+body #slider .slide .content .image{
+    padding-top: 0px;
+    text-align: center;
+    max-width: 55vw;
+    max-height: 55vh;
+    -webkit-user-drag: none;
+}
+body #slider .slide .content img{
+    padding-top: 0px;
+    text-align: center;
+    max-width: 55vw;
+    max-height: 55vh;
+    -webkit-user-drag: none;
+}
+
+/*
+    VIDEO OF THE SLIDE
+*/
+body #slider .slide .content .video{
+    width: 50vw !important;
+    height: 28.1vw !important;
+}
+
+/*
+    EDITING BUTTON
+*/
+body #slider #btn_edit{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: -80px;
+    top: -80px;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    transition: 0.3s;
+	z-index: 98;
+}
+
+/*
+    Next / Prev Button
+*/
+body #btn_prev{
+    position: fixed;
+    bottom: 50px;
+    right: 190px;
+    width: 35px;
+    height: 35px;
+    background-image: url("http://i.imgur.com/obAmTRV.png");
+    background-size: contain;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+}
+
+body #btn_next{
+    position: fixed;
+    bottom: 50px;
+    right: 90px;
+    width: 35px;
+    height: 35px;
+    background-image: url("http://i.imgur.com/Hj0Mnwo.png");
+    background-size: contain;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+}
+
+footer #author{
+    position: fixed;
+    bottom: 0;
+    color: var(--fixed-element-color);
+    font-size: 28px;
+    font-style: normal;
+    padding: 50px;
+    transition: 0.5s;
+}
