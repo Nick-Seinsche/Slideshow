@@ -1,12 +1,12 @@
 # Slideshow:
 
-### 1. About
+## 1. About
 ___
 Slideshow allows you to create simple jet very clean
 presentations only using html. The only thing you need is a text editor and a browser to open the presentation.
 In the following it will be explained how to create the presentation layout.
 
-### 2. Layout:
+## 2. Layout:
 ___
     <head>
         [title,fonts]
@@ -25,7 +25,7 @@ The body contains all the different slides of your presentation.
 
 The footer contains the Slideshow script which will turn the html file into the final clean presentation.
 
-### 3. Elements:
+## 3. Elements:
 ___
 **The following list contains the main elements that you can use to design your presentaion. Each Element will have its on section in this file, in which you will be explained how to use/implement the specific element into your presentaion**
 1. Title
@@ -42,7 +42,7 @@ ___
 12. Math equations
 13. __The Slideshow Script__
 
-#### __*i. Title*__
+### __*i. Title*__
 The title of you presention is specified in the head tag. It will be the name of the Browser-Table
 ```
 <head>
@@ -51,7 +51,7 @@ The title of you presention is specified in the head tag. It will be the name of
 </head>
 ```
 
-#### __*ii. Slide*__
+### __*ii. Slide*__
 The slide tag is put between the head and footer section
 ```
 ...
@@ -64,7 +64,7 @@ The slide tag is put between the head and footer section
 ...
 ```
 
-#### __*iii. Heading*__
+### __*iii. Heading*__
 The heading is the title of your slide
 ```
 <slide>
@@ -73,7 +73,7 @@ The heading is the title of your slide
 <slide>
 ```
 
-#### __*iv. Plain text*__
+### __*iv. Plain text*__
 Plain Text
 ```
 <slide>
@@ -82,7 +82,7 @@ Plain Text
 <slide>
 ```
 
-###### __*Attributes*__:
+##### __*Attributes*__:
 ```
     <text class="fontTiny">Smallest Text</text>
     <text class="fontSmall">Smaller Text</text>
@@ -90,7 +90,7 @@ Plain Text
     <text class="selectable">Allows to highlight the text</text>
 ```
 
-#### __*v. Cite*__:
+### __*v. Cite*__:
 Use Cites inside the text tags
 ```
 <slide>
@@ -104,7 +104,7 @@ Use Cites inside the text tags
 <slide>
 ```
 
-#### __*vi. Image*__
+### __*vi. Image*__
 The Image element adds an image from the internet to your slide to specify the image add a 'src' tag and set it to the desired link
 ```
 <slide>
@@ -113,12 +113,12 @@ The Image element adds an image from the internet to your slide to specify the i
 <slide>
 ```
 
-###### __*Attributes*__:
+##### __*Attributes*__:
 ```
     <image class="image selectable">Allows to highlight the image</image>
 ```
 
-#### __*vii. List*__
+### __*vii. List*__
 There are two types of lists. The dot list and the number list. The dotlist has dots infront of the list items and the number list has numbers infront of the list items
 *Dotlist:*
 ```
@@ -145,12 +145,12 @@ There are two types of lists. The dot list and the number list. The dotlist has 
 <slide>
 ```
 
-###### __*Attributes*__:
+##### __*Attributes*__:
 ```
     <[number/dot]list class="no_enumeration">A list without numbers or dots infront of the list items</[number/dot]list>
 ```
 
-#### __*viii. Video*__
+### __*viii. Video*__
 The video tag embeds a youtube video into the specified slide
 ```
 <slide>
@@ -161,7 +161,7 @@ The video tag embeds a youtube video into the specified slide
 ```
 Notice that the youtube embed link is not the normal link to the video!
 
-#### __*ix. Annotations*__
+### __*ix. Annotations*__
 Annotations can be placed into text tags and appear so: This is a annotation<sup>1</sup>
 ```
 <slide>
@@ -171,7 +171,7 @@ Annotations can be placed into text tags and appear so: This is a annotation<sup
 </slide>
 ```
 
-#### __*x. Notes*__
+### __*x. Notes*__
 Notes are used to explain annotation at the bottom of the slide. ideally place them at the end of the slide
 ```
 <slide>
@@ -180,7 +180,7 @@ Notes are used to explain annotation at the bottom of the slide. ideally place t
 </slide>
 ```
 
-#### __*xi. Author*__
+### __*xi. Author*__
 The author tag shows the name of the creator of the slideshow and it is location at the bottom left of the slides. The author tag is put into the footer tag
 ```
 <footer>
@@ -188,7 +188,7 @@ The author tag shows the name of the creator of the slideshow and it is location
 </footer>
 ```
 
-#### __*xii. Math Equations*__
+### __*xii. Math Equations*__
 Slideshow uses Mathjax to display math equations.
 For more informations visit [mathjax.org.](https://www.mathjax.org/)
 *inline equation*:
@@ -201,14 +201,14 @@ For more informations visit [mathjax.org.](https://www.mathjax.org/)
 ```
 '$$' marks the start and end of a math equation
 
-#### __*xiii. The Slideshow Script*__
+### __*xiii. The Slideshow Script*__
 ```
 <footer>
     <script type="text/javascript" src="https://drive.google.com/uc?export=download&id=1_YjS0CjAx5gpBDDhwR-iKw66gXLBTxNj" build="true" maths="true"></script>
 </footer>
 ```
 
-### Other Attributes:
+## 4. Other Attributes:
 ___
 
 Line one<br>Line two - ```Line one<br>Line two```
@@ -232,7 +232,7 @@ Line one<br>Line two - ```Line one<br>Line two```
 Script<sub>Subscript text</sub> - ```Script<sub>Subscript text</sub>```
 
 
-### 5. Example:
+## 5. Example:
 ___
 
 ```
