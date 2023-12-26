@@ -1,15 +1,16 @@
+![](https://img.shields.io/badge/license-MIT-orange)
+
 # Slideshow
+
 ---
 
-A framework to create minimalistic presentations without any additional software except a browser and a texteditor. It is designed to require
+A javascript framework to create minimalistic presentations without any additional software except a browser and a texteditor. It is designed to require
 next to no design decisions when creating a presentation, while
 providing your audience which the information they need to
 follow your presentation.
 
-It is resistent towards technical difficulties is a downer
-when you want to start with your presentation! No internet
-connection is needed to present!
-
+Easily Extendable to suit your needs and optimized for speed efficiency and reliability! It is resistent towards technical difficulties which are always painful when you want to start with your presentation! No internet
+connection is required to open you presentation!
 
 ## Workflow: Create
 
@@ -29,7 +30,11 @@ with the information you are trying to convey.
 
 2. Open the html file in a browser of your choice!
 
-https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+## Examples
+
+See `examples/` to get some ideas to inspire you.
+
+![](examples/example_slide.PNG)
 
 ## License
 
