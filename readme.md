@@ -9,7 +9,7 @@ next to no design decisions when creating a presentation, while
 providing your audience which the information they need to
 follow your presentation.
 
-Easily Extendable to suit your needs and optimized for speed efficiency and reliability! It is resistent towards technical difficulties which are always painful when you want to start with your presentation! No internet
+Easily extendable to suit your needs and optimized for speed efficiency and reliability! It is resistent towards technical difficulties which are always painful when you want to start with your presentation! No internet
 connection is required to open you presentation!
 
 ## Workflow: Create
